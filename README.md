@@ -2,13 +2,15 @@
 
 > Twice-verified satellite vision, persona-aware Earth observation AI, and interactive 3D field intelligence
 
+> <img width="500" height="400" alt="BHU (1)" src="https://github.com/user-attachments/assets/1d03af96-eda8-4e4d-b94f-bc89009fe619" /> 
+
+
 BhuChakshu (**भू-चक्षु** — *"the Earth's eye"*) is an open-source satellite imagery segmentation and land-intelligence platform combining zero-cost edge **Segment Anything (SAM)** contouring, multi-spectral physics (**NDVI, NDWI, NDBI, NBR, Sobel Bund Edges**), and **Gemini multimodal verification** for farmers, geologists, remote-sensing engineers, ML practitioners, and disaster analysts.
 
 ---
 
 <a target="_blank" href="https://github.com/janhvi11-15/BHU_Chakshu-SAM-Imagery-Webapp">
    "<img width="1280" height="640" alt="https___github com_janhvi11-15_BHU_Chakshu-SAM-Imagery-Webapp" src="https://github.com/user-attachments/assets/3f92ed21-7dff-4f33-990b-666083840141" />
-" />
 </a>
 
 ## Problem Statement
@@ -33,7 +35,8 @@ Manual land, boundary (*meḍh*), and crop monitoring across India is slow, frag
 - **Weeks 1–3 (Completed)**: LLM foundations, multimodal prompting, and embedding similarity search.
 - **v2 Web Platform (Shipped in App)**: Interactive SAM workbench, multi-spectral math, Dual-Verification, bilingual EO AI & Live Voice, 3D Field Ops, Open-Meteo agro-weather, Google Maps AOI explorer, and offline-capable PWA.
 - **Weeks 4–16 (In Progress / Planned)**: Copernicus/Earthdata STAC ingestion, SAM2 LoRA fine-tuning on EuroSAT/DeepGlobe/LandCover.ai, Sentinel-1 SAR change pipelines, and field benchmarking.
-
+-Deployed!!
+## App domain and URL: 
 ## Tech Stack
 
 | Layer | Tools & Services |
