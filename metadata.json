@@ -1,0 +1,6 @@
+{
+  "name": "BhuChakshu - Satellite Land Intelligence & Dual-Verified SAM Vision",
+  "description": "Zero-cost satellite imagery segmentation powered by SAM, multi-spectral remote sensing, and Gemini dual-verification for agriculture, cadastral demarcation, and disaster assessment.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
