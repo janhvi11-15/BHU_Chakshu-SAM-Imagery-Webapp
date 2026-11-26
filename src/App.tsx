@@ -91,6 +91,7 @@ export default function App() {
   const [isAiDrawerOpen, setIsAiDrawerOpen] = useState<boolean>(false);
   const [isLiveVoiceOpen, setIsLiveVoiceOpen] = useState<boolean>(false);
   const [isRoadmapOpen, setIsRoadmapOpen] = useState<boolean>(false);
+  const [docsInitialTab, setDocsInitialTab] = useState<'readme' | 'roadmap'>('readme');
 
   // Image cache element for reading ImageData during prompt segmentation
   const imgCacheRef = useRef<HTMLImageElement | null>(null);
@@ -475,7 +476,14 @@ export default function App() {
         onSelectPreset={(p) => setCurrentPreset(p)}
         onOpenUpload={() => setIsUploadOpen(true)}
         onOpenExport={() => setIsExportOpen(true)}
-        onOpenRoadmap={() => setIsRoadmapOpen(true)}
+        onOpenReadme={() => {
+          setDocsInitialTab('readme');
+          setIsRoadmapOpen(true);
+        }}
+        onOpenRoadmap={() => {
+          setDocsInitialTab('roadmap');
+          setIsRoadmapOpen(true);
+        }}
         onRunVerification={handleRunDualVerification}
         onToggleAiDrawer={() => setIsAiDrawerOpen((prev) => !prev)}
         onToggleLiveVoice={() => setIsLiveVoiceOpen((prev) => !prev)}
@@ -710,9 +718,12 @@ export default function App() {
         />
       )}
 
-      {/* v2 Roadmap & Model Cards Modal */}
+      {/* v2 README, Roadmap & Model Cards Modal */}
       {isRoadmapOpen && (
-        <RoadmapAndModelCardsModal onClose={() => setIsRoadmapOpen(false)} />
+        <RoadmapAndModelCardsModal
+          initialTab={docsInitialTab}
+          onClose={() => setIsRoadmapOpen(false)}
+        />
       )}
 
       {/* Offline PWA Banner */}

@@ -22,6 +22,7 @@ import {
   Activity,
   BookOpen,
   UserCheck,
+  FileText,
 } from 'lucide-react';
 
 interface HeaderProps {
@@ -36,6 +37,7 @@ interface HeaderProps {
   onSelectPreset: (preset: SatelliteTilePreset) => void;
   onOpenUpload: () => void;
   onOpenExport: () => void;
+  onOpenReadme: () => void;
   onOpenRoadmap: () => void;
   onRunVerification: () => void;
   onToggleAiDrawer: () => void;
@@ -57,6 +59,7 @@ export const Header: React.FC<HeaderProps> = ({
   onSelectPreset,
   onOpenUpload,
   onOpenExport,
+  onOpenReadme,
   onOpenRoadmap,
   onRunVerification,
   onToggleAiDrawer,
@@ -238,6 +241,15 @@ export const Header: React.FC<HeaderProps> = ({
       {/* Right: Tools & Primary Actions */}
       <div className="flex items-center gap-1.5">
         <PWAInstallButton />
+
+        <button
+          onClick={onOpenReadme}
+          className="px-2 py-1.5 rounded-lg bg-slate-800/80 hover:bg-slate-700 text-xs text-slate-200 border border-slate-700 flex items-center gap-1.5"
+          title="Read Project README.md inside BhuChakshu"
+        >
+          <FileText className="w-3.5 h-3.5 text-emerald-400" />
+          <span className="hidden xl:inline">README</span>
+        </button>
 
         <button
           onClick={onOpenRoadmap}
