@@ -8,7 +8,6 @@ import {
 import { PERSONA_CONFIGS } from '../data/personas';
 import { PWAInstallButton } from './PWAControls';
 import {
-  Satellite,
   ShieldCheck,
   Upload,
   Download,
@@ -93,8 +92,12 @@ export const Header: React.FC<HeaderProps> = ({
       {/* Left: Brand & Workspace Mode Switcher */}
       <div className="flex flex-wrap items-center justify-between sm:justify-start gap-2 sm:gap-3 w-full sm:w-auto">
         <div className="flex items-center gap-2.5">
-          <div className="w-9 h-9 rounded-lg bg-emerald-950/80 border border-emerald-500/40 flex items-center justify-center text-emerald-400">
-            <Satellite className="w-4 h-4" />
+          <div className="w-9 h-9 rounded-lg bg-slate-950 border border-emerald-500/40 overflow-hidden shrink-0 shadow-sm">
+            <img
+              src="/favicon.ico"
+              alt="BhuChakshu icon"
+              className="w-full h-full object-cover"
+            />
           </div>
           <div>
             <div className="flex items-center gap-1.5">
