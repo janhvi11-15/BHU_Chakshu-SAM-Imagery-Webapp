@@ -6,8 +6,9 @@ BhuChakshu (**भू-चक्षु** — *"the Earth's eye"*) is an open-sourc
 
 ---
 
-<a target="_blank" href="https://github.com/janhvi11-15/Bhu_Chakshu">
-  <img width="1584" height="396" alt="BhuChakshu Banner" src="https://github.com/user-attachments/assets/f037baae-c198-444b-b33a-2ced32010dbd" />
+<a target="_blank" href="https://github.com/janhvi11-15/BHU_Chakshu-SAM-Imagery-Webapp">
+   "<img width="1280" height="640" alt="https___github com_janhvi11-15_BHU_Chakshu-SAM-Imagery-Webapp" src="https://github.com/user-attachments/assets/3f92ed21-7dff-4f33-990b-666083840141" />
+" />
 </a>
 
 ## Problem Statement
@@ -114,3 +115,4 @@ MIT — see `[LICENSE](LICENSE)`.
 ---
 
 *Built one evening at a time.*
+                                               <h2>Build / Developed/ Designed with 🫰<h2/>
